@@ -1,23 +1,63 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Blog Directory</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+      float: right;
+      width: 700px;
+      height: 3000px;
+      margin: 200px;
+      padding-right: 20rem;
+    }
+    .cool-button {
+      background-color: #080707;
+      color: white;
+      border: none;
+      padding: 9px 9px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+ /* transition-duration: 0.4s;  */
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+    }
+    .cool-button:hover {
+      background-color: #34a3cb;
+    }
+  </style>
 </head>
-<script defer src="https://cdn.bayanplus.co/bp.js" data-pid="BDuOYMOX"></script>
 <body>
   <div class="container">
     <h1 class="text-center">مقالتي الشخصية</h1>
     <ul class="list-group">
       <li class="list-group-item"><a href="DebtandConsumerism.html"> الدين الاستهلاكي - JULY12023</a></li>
-  <!--   <li class="list-group-item"><a href="blog2.html">Blog 2</a></li>
-     <li class="list-group-item"><a href="blog3.html">Blog 3</a></li>  -->
+      <!-- <li class="list-group-item"><a href="blog2.html">Blog 2</a></li>
+      <li class="list-group-item"><a href="blog3.html">Blog 3</a></li> -->
     </ul>
+   <!-- <button class="cool-button" onclick="openRandomBlog()">مقالة عشوائية</button> -->
+    <button class="cool-button" onclick="goToMainPage()">الرئيسية</button> 
   </div>
-  
+
+  <script>
+    function goToMainPage() {
+      window.location.href = "index.html"; 
+    }
+    function openRandomBlog() {
+      var blogs = [
+        "DebtandConsumerism.html",
+        "index.html"
+      ];
+      var randomIndex = Math.floor(Math.random() * blogs.length);
+      var randomBlog = blogs[randomIndex];
+      window.location.href = randomBlog;
+    }
+  </script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
