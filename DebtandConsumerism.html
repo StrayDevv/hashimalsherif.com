@@ -4,6 +4,22 @@
   <title>الدين الاستهلاكي</title>
 </head>
 <script defer src="https://cdn.bayanplus.co/bp.js" data-pid="BDuOYMOX"></script>
+<style>
+
+.cool-button {
+      background-color: #080707;
+      color: white;
+      border: none;
+      padding: 9px 9px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+ /* transition-duration: 0.4s;  */
+      cursor: pointer;
+      border-radius: 4px;
+    }
+</style>
 <body style="direction: rtl;">
 
 
@@ -30,7 +46,20 @@
 <p> هاشم الشريف</p>
 
 
-
-<h4><a href="blog.html">السابق</a></h4>
+<script>   function goToMainPage() {
+      window.location.href = "blog.html"; 
+    }
+    function openRandomBlog() {
+      var blogs = [
+        
+        "FiveThingsEverySuccessfulPersonShouldHave.html"
+      ];
+      var randomIndex = Math.floor(Math.random() * blogs.length);
+      var randomBlog = blogs[randomIndex];
+      window.location.href = randomBlog;
+    }
+    </script>
+<button class="cool-button" onclick="goToMainPage()"><a>السابق</a></button>
+<button class="cool-button" onclick="openRandomBlog()"> التالي</button>
 </body>
 </html>
