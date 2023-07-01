@@ -2,30 +2,7 @@
 <html>
 <head>
   <title>Five Things Every Successful Person Should Have</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      margin: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-
-.cool-button {
-      background-color: #080707;
-      color: white;
-      border: none;
-      padding: 9px 9px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 13px;
- /* transition-duration: 0.4s;  */
-      cursor: pointer;
-      border-radius: 4px;
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <script defer src="https://cdn.bayanplus.co/bp.js" data-pid="BDuOYMOX"></script>
 
@@ -62,25 +39,11 @@
     Hashim Alsherif
   </p>
 
-  <script>   function goToMainPage() {
-    window.location.href = "DebtandConsumerism.html"; 
-  }
-  function Main() {
-    window.location.href = "blog.html"; 
-  }
-  function openRandomBlog() {
-    var blogs = [
-      
-      "DebtandConsumerism.html"
-    ];
-    var randomIndex = Math.floor(Math.random() * blogs.length);
-    var randomBlog = blogs[randomIndex];
-    window.location.href = randomBlog;
-  }
-  </script>
-<button class="cool-button" onclick="goToMainPage()"><a>Previous</a></button>
-<button class="cool-button" onclick="openRandomBlog()">Next</button>
-<button class="cool-button" onclick="Main()"><a>Main</a></button>
+  <center>
 
+<button class="cool-button" onclick="goToMainPage('blog')"><a>Previous</a></button>
+<button class="cool-button" onclick="openRandomBlog()">Next</button>
+</center>
+<script src="index.js"></script>
 </body>
 </html>

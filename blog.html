@@ -11,6 +11,7 @@
       height: 3000px;
       margin: 200px;
       padding-right: 20rem;
+      text-align: center;
     }
     .cool-button {
       background-color: #080707;
@@ -41,29 +42,22 @@
       <li class="list-group-item"><a href="DebtandConsumerism.html"> الدين الاستهلاكي - JUL12023</a></li>
        <li class="list-group-item"><a href="FiveThingsEverySuccessfulPersonShouldHave.html">Five Things Every Successful Person Should Have
 - DEC172023       </a></li>
+
 <!--    <li class="list-group-item"><a href="blog3.html">Blog 3</a></li> -->
+
     </ul>
+    <center>
+
     <button class="cool-button" onclick="openRandomBlog()">مقالة عشوائية</button> 
-    <button class="cool-button" onclick="goToMainPage()">الرئيسية</button> 
+    <button class="cool-button" onclick="goToMainPage('index')">الرئيسية</button> 
+  </center>
   </div>
 
-  <script>
-    function goToMainPage() {
-      window.location.href = "index.html"; 
-    }
-    function openRandomBlog() {
-      var blogs = [
-        "DebtandConsumerism.html",
-        "FiveThingsEverySuccessfulPersonShouldHave.html"
-      ];
-      var randomIndex = Math.floor(Math.random() * blogs.length);
-      var randomBlog = blogs[randomIndex];
-      window.location.href = randomBlog;
-    }
-  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>

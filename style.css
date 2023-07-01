@@ -1,0 +1,38 @@
+.button {
+    background-color: #C5EFFD;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aqua;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+
+.cool-button {
+    background-color: #080707;
+    color: white;
+    border: none;
+    padding: 9px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+/* transition-duration: 0.4s;  */
+    cursor: pointer;
+    border-radius: 4px;
+  }
+      .cool-button:hover {
+    background-color: #34a3cb;
+  }
