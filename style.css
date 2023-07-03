@@ -19,7 +19,6 @@ body {
   h1 {
     text-align: center;
   }
-
 .cool-button {
     background-color: #080707;
     color: white;
@@ -36,3 +35,9 @@ body {
       .cool-button:hover {
     background-color: #34a3cb;
   }
+
+.class-text {
+
+padding: 1rem 2.5rem;
+
+}
