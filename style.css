@@ -1,43 +1,101 @@
-.button {
-    background-color: #C5EFFD;
-    border: none;
-    color: black;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: aqua;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    margin: 20px;
-  }
-  h1 {
-    text-align: center;
-  }
+/* Default styles for all screen sizes */
 .cool-button {
-    background-color: #080707;
-    color: white;
-    border: none;
+  background-color: #080707;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cool-button:hover {
+  background-color: #34a3cb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Styles for small screen sizes */
+@media (max-width: 600px) {
+  .cool-button {
+    padding: 6px 6px;
+    font-size: 12px;
+  }
+
+/* Styles for small screen sizes */
+@media (max-width: 600px) {
+  .class-photo {
+    padding-right: 2rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Styles for medium screen sizes */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .class-photo {
+    padding-right: 20rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Styles for large screen sizes */
+@media (min-width: 1025px) {
+  .class-photo {
+    padding-right: 30rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+  .span-class {
+    padding-right: 0;
+  }
+
+  .span-class2 {
+    padding-right: 0;
+  }
+}
+
+/* Styles for medium screen sizes */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cool-button {
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+
+  .class-photo {
+    padding-right: 20rem;
+    width: 400px;
+  }
+}
+
+/* Styles for large screen sizes */
+@media (min-width: 1025px) {
+  .cool-button {
     padding: 9px 9px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 13px;
-/* transition-duration: 0.4s;  */
-    cursor: pointer;
-    border-radius: 4px;
-  }
-      .cool-button:hover {
-    background-color: #34a3cb;
   }
 
-.class-text {
+  .class-photo {
+    padding-right: 30rem;
+    width: 460px;
+  }
 
-padding: 1rem 2.5rem;
+  .span-class {
+    padding-right: 42rem;
+  }
 
+  .span-class2 {
+    padding-right: 34.2rem;
+  }
 }
