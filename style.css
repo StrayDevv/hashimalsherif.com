@@ -84,6 +84,7 @@ h1 {
   .cool-button {
     padding: 9px 9px;
     font-size: 13px;
+    margin-top: 4px;
   }
 
   .class-photo {
